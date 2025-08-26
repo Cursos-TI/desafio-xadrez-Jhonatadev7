@@ -6,27 +6,38 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Definição das constantes de casas que cada peça deve se mover
+    const int casasTorre = 5;
+    const int casasBispo = 5;
+    const int casasRainha = 8;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Implementação de Movimentação da Torre (usando for)
+    // Torre anda em linha reta: neste caso, 5 casas para a direita.
+    printf("Movimento da Torre:\n");
+    for (int i = 1; i <= casasTorre; i++) {
+        printf("Direita\n");
+    }
+    printf("\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // Implementação de Movimentação do Bispo (usando while)
+    // Bispo anda em diagonal: neste caso, 5 casas para cima e à direita.
+    printf("Movimento do Bispo:\n");
+    int i = 1;
+    while (i <= casasBispo) {
+        printf("Cima, Direita\n");
+        i++;
+    }
+    printf("\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    // Implementação de Movimentação da Rainha (usando do-while)
+    // Rainha pode andar em todas as direções: aqui simulando 8 casas para a esquerda.
+    printf("Movimento da Rainha:\n");
+    int j = 1;
+    do {
+        printf("Esquerda\n");
+        j++;
+    } while (j <= casasRainha);
+    printf("\n");
 
     return 0;
 }
