@@ -24,7 +24,8 @@ int main() {
     printf("Movimento do Bispo:\n");
     int i = 1;
     while (i <= casasBispo) {
-        printf("Cima, Direita\n");
+        printf("Cima\n");
+        printf("Direita\n");
         i++;
     }
     printf("\n");
@@ -37,6 +38,33 @@ int main() {
         printf("Esquerda\n");
         j++;
     } while (j <= casasRainha);
+    printf("\n");
+
+    // ===============================
+    // Nível Aventureiro - Movimento do Cavalo
+    // O Cavalo se move em "L": neste desafio, 2 casas para baixo e 1 casa para a esquerda.
+    // Usaremos dois loops aninhados: um for (para as 2 casas "Baixo")
+    // e um while (para a 1 casa "Esquerda").
+    // ===============================
+
+    // Definição das constantes para o movimento do Cavalo
+    const int casasBaixo = 2;
+    const int casasEsquerda = 1;
+
+    printf("Movimento do Cavalo:\n");
+
+    // Loop externo: movimentação para baixo
+    for (int k = 1; k <= casasBaixo; k++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno (while): movimentação para esquerda
+    int l = 1;
+    while (l <= casasEsquerda) {
+        printf("Esquerda\n");
+        l++;
+    }
+
     printf("\n");
 
     return 0;
